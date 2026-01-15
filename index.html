@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    body {
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("./assets/bakground.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* filter: blur(10px); */
+    opacity: 0.4;
+    z-index: -1;
+}
+     .nav {
+        width: 100%;
+        height: 60px;
+        background-color: #fdfcfc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav img {
+        height: 60px;
+        width: auto;
+    }
+
+    .nav > div {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: #333333;
+        font-weight: 500;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .nav ul li a:hover {
+        text-decoration: underline;
+        transform: none;
+        transition: 0.1s;
+        color: #ff0000;
+    }
+     .div {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        align-items: center;
+    }
+    .div h4 {
+        font-size: 20px;
+        color: #000000;
+        font-family: Arial, sans-serif;
+    }
+    .div p {
+        width: 400px;
+        margin-top: 10px;
+        color: #382f2f;
+        font-size: 14px;
+        line-height: 1.6;
+        font-family: cursive;
+    }
+    .div img {
+        height: 500px;
+    }
+    .para {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.product {
+    width: 320px;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.product:hover {
+    border: 2px solid #c49a6c;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.para p {
+    width: 300px;
+    margin: 10px auto;
+    color: #382f2f;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: cursive;
+}
+
+.order-btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #c49a6c;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #a87f52;
+}
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #ccc;
+}
+.simple-contact {
+    background-color: #F7F4EB; 
+    padding: 50px 20px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #5D4037; 
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #5D4037;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #3e2b25;
+}
+
+</style>
+<body>
+    <nav class="nav">
+        <div>
+            <div><img src="./assets/logo.png" alt=""></div>
+            <div>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#benifits">Benifits</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="div" >
+    <div><h4><b>The Ancient Secret to Modern Wellness</b></h4><br><p><b>Discover the soothing power of Talbeena—a traditional prophetic food crafted from the finest barley, milk, and honey. Known for centuries as a "comfort for the heart," Talbeena is more than just a meal; it’s a wholesome bowl of nutrients designed to nourish your body and ease the mind. At Al-Ghiza, we bring you this sunnah-inspired superfood in its purest form.</b></p><br></div>
+     <div><img src="./assets/i3.png" alt=""></div>
+</div>
+<br>
+
+<div id="benifits" class="h1" >
+    <h1><center><b>Benifits of Talbeena</b></center></h1>
+
+
+<div class="div">
+    <div><img src="./assets/logo2.png" alt=""></div>
+    <div><h4><b>The Healing Power of Talbeena</b></h4><br><p><b>Talbeena is famously known as a "remedy for the heart." Modern science suggests that the high Magnesium and Tryptophan content in barley helps in the production of serotonin, which can help</b></p><br><button type="button" class="btn btn-danger">Explore Solutions</button></div>
+</div>
+</div>
+<br><br><br>
+
+<div id="categories" class="h1" ">
+    <h1><center><b>Categories</b></center></h1>
+<div class="para" >
+
+    <div class="product">
+        <div><img src="./assets/i4.png" alt="" width="300px"></div>
+        <div>
+            <b>TALBEENA AJWA DATES 200gm</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <div><img src="./assets/i5.png" alt="" width="300px"></div>
+        <div>
+            <b>TALBEENA HONEY 200gm</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <div><img src="./assets/i6.png" alt="" width="300px"></div>
+        <div>
+            <b>TALBEENA SAFFRON 200gm</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+</div>
+<div class="para" ">
+
+    <div class="product">
+        <div><img src="./assets/i7.png" alt="" width="300px"></div>
+        <div>
+            <b>TALBEENA ALMOND 200gm</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <div><img src="./assets/i4.png" alt="" width="300px"></div>
+        <div>
+            <b>Talbeena Sugar free 200gm</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <div><img src="./assets/i5.png" alt="" width="300px"></div>
+        <div>
+            <b>TALBEENA Dry Fruit Mix Box 200gm</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+</div>
+</div>
+<br><br>
+<section class="simple-contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Email: <b>info@alghiza.com</b> | WhatsApp: <b>+123 456 789</b></p>
+        
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <img src="./assets/logo3.png" alt="Al-Ghiza" width="70">
+
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#benifits">Benefits</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+
+    <p>© 2026 Al-Ghiza. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
